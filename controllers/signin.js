@@ -2,6 +2,7 @@
 
 module.exports = {
     'POST /signin': async (ctx, next) => {
+        // SELECT * FROM `users_login_info` WHERE email = 'liukai@gmail.com' AND password = '123456';s
         const
             email = ctx.request.body.email || '',
             password = ctx.request.body.password || '';
